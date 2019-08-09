@@ -14,7 +14,7 @@ end_of_line = lf
 indent_style = space
 indent_size = 4
 
-# 行末の改行は削除する。
+# 行末の空白は削除する。
 trim_trailing_whitespace = true
 
 # ファイル終端に改行を入れる。

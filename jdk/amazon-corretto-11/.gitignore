@@ -1,0 +1,12 @@
+bin/
+conf/
+include/
+jmods/
+legal/
+lib/
+/ADDITIONAL_LICENSE_INFO
+/ASSEMBLY_EXCEPTION
+/LICENSE
+/README.md
+/release
+/version.txt

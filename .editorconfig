@@ -1,0 +1,26 @@
+# エディタ設定
+
+root = true
+
+[*]
+
+# 文字コードはUTF-8
+charset = utf-8
+
+# 基本的に改行コードはLF。
+end_of_line = lf
+
+# インデントはスペース4つ
+indent_style = space
+indent_size = 4
+
+# 行末の改行は削除する。
+trim_trailing_whitespace = true
+
+# ファイル終端に改行を入れる。
+insert_final_newline = true
+
+[*.bat]
+
+# バッチファイルのみCRLF
+end_of_line = crlf

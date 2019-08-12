@@ -9,7 +9,16 @@ Webアプリケーションフレームワーク **MORISOBA**
 * OSはWindows 10 Pro x64 環境を前提とする。
 * ブラウザはGoogle Chromeの使用を前提とする。
 
-### Visual Studio Codeインストール
+### Git for Windows インストール
+
+1. 下記サイトからGit for Windowsのインストーラーをダウンロードする。
+1. Git for Windowsをインストールする。
+1. (SSH鍵等をまだ作成していない場合) Git Bashを使用してSSH鍵を生成する。
+    * デスクトップの`Git Bash`アイコンをクリックし、コンソールを起動する。
+    * `ssh-keygen -b 4096` コマンドで`id_rsa`および`id_rsa.pub`を生成する。
+    * `id_rsa.pub`をGithubなどに登録する。`id_rsa`の方は**絶対に外部に漏らさないよう注意する。**
+
+### Visual Studio Code インストール
 
 1. 下記サイトからWindows向け64bitの User Installerをダウンロードする。
     * https://code.visualstudio.com/download

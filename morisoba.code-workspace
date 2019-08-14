@@ -25,6 +25,9 @@
             "**/.settings": true,
             "**/.factorypath": true,
             "jdk/": true
+        },
+        "terminal.integrated.env.windows": {
+            "JAVA_HOME": "${workspaceFolder:.}\\jdk\\amazon-corretto-11"
         }
     }
 }

@@ -1,0 +1,38 @@
+// backend プロジェクト ビルド設定
+
+// 使用するプラグイン
+plugins {
+    id 'org.springframework.boot' version "2.1.7.RELEASE"
+}
+
+// デフォルトで入っているJava用プラグインを有効化
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+// Spring Boot 依存関係管理用プラグイン有効化
+apply plugin: 'io.spring.dependency-management'
+
+// リポジトリ設定
+repositories {
+    jcenter()
+}
+
+// Java設定
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+version = productVersion
+compileJava.options.encoding = sourceEncoding
+compileTestJava.options.encoding = sourceEncoding
+
+// 依存関係の設定
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+// 依存関係の更新
+task updateDependencies(dependsOn: ['eclipse', 'classes', 'testClasses']) {
+}
+
+// プロジェクトの初期化
+task initializeProjects(dependsOn: 'updateDependencies') {
+}

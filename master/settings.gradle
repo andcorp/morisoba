@@ -1,1 +1,1 @@
-includeFlat 'domain', 'db', 'backend', 'frontend'
+includeFlat 'backend'

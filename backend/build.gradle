@@ -24,6 +24,11 @@ version = productVersion
 compileJava.options.encoding = sourceEncoding
 compileTestJava.options.encoding = sourceEncoding
 
+// 依存関係の設定
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
 // 依存関係の更新
 task updateDependencies(dependsOn: ['eclipse', 'classes', 'testClasses']) {
 }

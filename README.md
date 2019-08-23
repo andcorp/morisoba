@@ -33,3 +33,10 @@ Amazonが提供しているJDKの[Amzaon Corretto](https://aws.amazon.com/jp/cor
     * https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
 1. ダウンロードしたZIPファイルを展開する。
     * ダウンロードしたZIPファイルに格納されている`jdk11.x.x_xx`の**内容**を、本ワークスペースの`jdk/amazon-corretto-11`ディレクトリ内にコピーする。
+
+### ワークスペース初期化
+
+バッチファイルにより`.code-workspace`ファイル等を生成するようになっている。
+
+1. `master\initialize.bat`を実行する。
+1. `morisoba.code-workspace`ファイルが作成されるので、VSCodeでワークスペースを開く。

@@ -19,3 +19,21 @@ allprojects {
 subprojects {
 
 }
+
+import groovy.json.StringEscapeUtils
+
+// ワークスペースの生成
+task generateWorkspace {
+    doFirst {
+        copy {
+            from file("$rootDir/../morisoba.code-workspace.template")
+            expand userJavaHome: StringEscapeUtils.escapeJavaScript(System.getenv()['JAVA_HOME'])
+            rename { 'morisoba.code-workspace' }
+            into "$rootDir/../"
+        }
+    }
+}
+
+// ワークスペースの初期化
+task initializeWorkspace(dependsOn: [generateWorkspace]) {
+}

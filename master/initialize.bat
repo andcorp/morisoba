@@ -1,6 +1,6 @@
+cd %~dp0
 
 CALL :SET_JAVA_HOME "..\jdk\amazon-corretto-11"
-echo %JAVA_HOME%
 
 .\gradlew.bat --stacktrace initializeWorkspace
 

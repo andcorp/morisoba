@@ -16,7 +16,9 @@
         ]
     },
 	"settings": {
+        "editor.formatOnSave": true,
 		"java.home": "${userJavaHome}",
+        "java.format.settings.url": "master/java_formatter.xml",
 		"java.jdt.ls.vmargs": "-noverify -Dfile.encoding=utf8 -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
         "java.configuration.updateBuildConfiguration": "automatic",
         "files.exclude": {

@@ -1,0 +1,16 @@
+{
+    "name": "morisoba",
+    "version": "0.0.1",
+    "description": "MORISOBA Web Application Framework",
+    "main": "index.js",
+    "author": {
+        "name": "andcorp.co.jp",
+        "url": "https://andcorp.co.jp/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andcorp/morisoba.git"
+    },
+    "license": "MIT",
+    "private": true
+}

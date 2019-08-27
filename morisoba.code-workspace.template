@@ -13,6 +13,7 @@
 			"vscjava.vscode-java-pack",
 			"vscjava.vscode-java-test",
 			"vscjava.vscode-maven",
+			"shengchen.vscode-checkstyle"
         ]
     },
 	"settings": {
@@ -21,6 +22,7 @@
         "java.format.settings.url": "master/java_formatter.xml",
 		"java.jdt.ls.vmargs": "-noverify -Dfile.encoding=utf8 -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
         "java.configuration.updateBuildConfiguration": "automatic",
+        "java.checkstyle.configuration": "\${workspaceFolder}\\\\master\\\\checkstyle\\\\checkstyle.xml",
         "files.exclude": {
             "**/.classpath": true,
             "**/.project": true,

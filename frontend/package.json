@@ -12,5 +12,9 @@
         "url": "https://github.com/andcorp/morisoba.git"
     },
     "license": "MIT",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "typescript": "3.5.3",
+        "ts-node": "8.3.0"
+    }
 }

@@ -14,9 +14,13 @@ node {
 }
 
 // ツール等のインストール
-task installTools(dependsOn: ['yarn_install']) {
+task installTools(dependsOn: [yarn_install]) {
+}
+
+// プロジェクトのビルド
+task build(dependsOn: [installTools, gulp_default]) {
 }
 
 // プロジェクトの初期化
-task initializeProjects(dependsOn: ['installTools']) {
+task initializeProjects(dependsOn: [installTools]) {
 }

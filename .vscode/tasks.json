@@ -12,5 +12,14 @@
             },
             "problemMatcher": []
         },
+        {
+            "label": "buildFrontend",
+            "type": "shell",
+            "command": ".\\gradlew.bat :frontend:build",
+            "options": {
+                "cwd": ".\\master"
+            },
+            "problemMatcher": []
+        },
     ]
 }

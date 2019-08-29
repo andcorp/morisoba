@@ -13,7 +13,8 @@
 			"vscjava.vscode-java-pack",
 			"vscjava.vscode-java-test",
 			"vscjava.vscode-maven",
-			"shengchen.vscode-checkstyle"
+			"shengchen.vscode-checkstyle",
+            "dbaeumer.vscode-eslint"
         ]
     },
 	"settings": {
@@ -32,6 +33,16 @@
         },
         "terminal.integrated.env.windows": {
             "JAVA_HOME": "${userJavaHome}"
-        }
+        },
+        "eslint.validate": [
+            "javascript",
+            "typescript"
+        ],
+        "eslint.workingDirectories": [
+            {
+                "directory": ".\\\\frontend",
+                "changeProcessCWD": true
+            }
+        ]
     }
 }

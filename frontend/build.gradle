@@ -17,6 +17,10 @@ node {
 task installTools(dependsOn: [yarn_install]) {
 }
 
+// 開発サーバー起動
+task serve(dependsOn: [installTools, gulp_serve]) {
+}
+
 // プロジェクトのビルド
 task build(dependsOn: [installTools, gulp_default]) {
 }

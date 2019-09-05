@@ -13,6 +13,15 @@
             "problemMatcher": []
         },
         {
+            "label": "serveFrontend",
+            "type": "shell",
+            "command": ".\\gradlew.bat :frontend:serve",
+            "options": {
+                "cwd": ".\\master"
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "buildFrontend",
             "type": "shell",
             "command": ".\\gradlew.bat :frontend:build",

@@ -5,6 +5,6 @@
 /**
  * デフォルトタスク.
  */
-export default async function defaultTask() {
+export default async function defaultTask(): Promise<void> {
     console.log("hello,world!");
 }

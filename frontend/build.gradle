@@ -1,0 +1,30 @@
+// frontend プロジェクト ビルド設定
+
+// 使用するプラグイン
+plugins {
+  id 'com.moowork.node' version '1.3.1'
+  id 'com.moowork.gulp' version '1.3.0'
+}
+
+// node.jsバージョン
+node {
+    version = '10.16.3'
+    yarnVersion = '1.17.3'
+    download = true
+}
+
+// ツール等のインストール
+task installTools(dependsOn: [yarn_install]) {
+}
+
+// 開発サーバー起動
+task serve(dependsOn: [installTools, gulp_serve]) {
+}
+
+// プロジェクトのビルド
+task build(dependsOn: [installTools, gulp_default]) {
+}
+
+// プロジェクトの初期化
+task initializeProjects(dependsOn: [installTools]) {
+}

@@ -2,7 +2,7 @@
 
 // 使用するプラグイン
 plugins {
-    id 'org.springframework.boot' version "2.1.7.RELEASE"
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
 }
 
 // デフォルトで入っているJava用プラグインを有効化

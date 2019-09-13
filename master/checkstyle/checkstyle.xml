@@ -23,13 +23,13 @@
        <property name="message" value="Line has trailing spaces."/>
     </module>
 
-    <!-- 警告抑止フィルター -->
-    <module name="SuppressionFilter">
-        <property name="file" value="./master/checkstyle/suppressions.xml"/>
-        <property name="optional" value="false"/>
-    </module>
-
     <module name="TreeWalker">
+        <!-- 警告抑止フィルター -->
+        <module name="SuppressionXpathSingleFilter">
+            <property name="files" value=".*src.test.java.*\.java$|.*Test\.java|.*TestUtils\.java"/>
+            <property name="checks" value="JavadocPackageCheck|MagicNumberCheck"/>
+        </module>
+
         <!-- 警告抑止コメント -->
         <module name="SuppressionCommentFilter">
             <property name="offCommentFormat" value="// CHECKSTYLE:OFF (\w)" />

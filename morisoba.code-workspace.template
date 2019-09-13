@@ -20,10 +20,10 @@
 	"settings": {
         "editor.formatOnSave": true,
 		"java.home": "${userJavaHome}",
-        "java.format.settings.url": "master/java_formatter.xml",
+        "java.format.settings.url": "master/java_formatter/java_formatter.xml",
 		"java.jdt.ls.vmargs": "-noverify -Dfile.encoding=utf8 -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
         "java.configuration.updateBuildConfiguration": "automatic",
-        "java.checkstyle.configuration": "\${workspaceFolder}\\\\master\\\\checkstyle\\\\checkstyle.xml",
+        "java.checkstyle.configuration": "master/checkstyle/checkstyle.xml",
         "files.exclude": {
             "**/.classpath": true,
             "**/.project": true,

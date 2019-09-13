@@ -26,6 +26,12 @@ SOFTWARE.
 
 ----
 
-`master/checkstyle.xml` is distribute under the LGPL license.
+`master/checkstyle/checkstyle.xml` is distribute under the LGPL license.
 
-see also `master/LICENSE.checkstyle` and `master/checkstyle.xml`.
+see also `master/checkstyle/LICENSE.checkstyle` and `master/checkstyle/checkstyle.xml`.
+
+----
+
+`master/java_formatter/java_formatter.xml` is distribute under the EPL 2.0 license.
+
+see also `master/java_formatter/LICENSE.java_formatter` and `master/java_formatter/java_formatter.xml`.

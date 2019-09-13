@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  This file based on the Eclipse JDT default formatter configuration.
+
+  https://git.eclipse.org/c/jdt/eclipse.jdt.core.git/tree/LICENSE
+-->
 <profiles version="16">
 <profile kind="CodeFormatterProfile" name="new_formatter" version="16">
 <setting id="org.eclipse.jdt.core.formatter.insert_space_after_ellipsis" value="insert"/>

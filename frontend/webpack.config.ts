@@ -6,6 +6,7 @@ import { Configuration, Module, Resolve, RuleSetRule } from "webpack";
 
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import VueLoader from "vue-loader";
 
 /**
  * ビルドルール定義.
@@ -15,6 +16,18 @@ const rules: RuleSetRule[] = [
     {
         test: /\.ts$/,
         use: "ts-loader"
+    },
+
+    // Vue SFCルール
+    {
+        test: /\.vue$/,
+        loader: "vue-loader"
+    },
+
+    // CSSルール
+    {
+        test: /\.css$/,
+        use: ["vue-style-loader", "css-loader"]
     }
 ];
 
@@ -53,7 +66,10 @@ const config: Configuration = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/html/index.html"
-        })
+        }),
+
+        // Vue SFCを処理する。
+        new VueLoader.VueLoaderPlugin()
     ]
 };
 

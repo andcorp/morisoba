@@ -120,10 +120,10 @@
     "@types/relateurl" "*"
     "@types/uglify-js" "*"
 
-"@types/html-webpack-plugin@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@types/html-webpack-plugin/-/html-webpack-plugin-3.2.1.tgz#d3401407261ec82cb0fc380df28e57c94e851e4d"
-  integrity sha512-H8Pj1/Urx6qlUednZpNsveDVUsO63gQdu5DLaAf9t7iG0iyK0OS4XKFG5v1PSG1Nek9S65BrPrKt8DfEib02ng==
+"@types/html-webpack-plugin@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@types/html-webpack-plugin/-/html-webpack-plugin-3.2.2.tgz#f552121f3c0a3972dda9a425de1e0029069b2907"
+  integrity sha512-KsL5cHtNWhOQF9Cu+Dpn7GemzQRxdKhe1/LgZUSku33B5L4Cx2/p3DX6YbeRNOoI552MNbB/VNbCDNEYU//iAw==
   dependencies:
     "@types/html-minifier" "*"
     "@types/tapable" "*"
@@ -229,10 +229,10 @@
     "@types/expect" "^1.20.4"
     "@types/node" "*"
 
-"@types/webpack-dev-server@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@types/webpack-dev-server/-/webpack-dev-server-3.9.0.tgz#e31096477a88b0e54968cbc0d688dac9ba2c5442"
-  integrity sha512-4wXREDfUJmKTNcoaLLHjgsRHZhogIScXJPc5B6e5bYx16zd9H3WfM67w+mEgNaRxVCgb6YNnc8O2lX2IUn4zdQ==
+"@types/webpack-dev-server@3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@types/webpack-dev-server/-/webpack-dev-server-3.10.0.tgz#5121ed285357b3b7463cac0d35e9b93819cf2167"
+  integrity sha512-ct/g/4WEEqOpXPqGX31TlZSzF1Sb7LXIViBz0oBSdH08XtNgY/hq/faXkw0yTxqvj7HJwS8dy2ggzqHposf1fQ==
   dependencies:
     "@types/connect-history-api-fallback" "*"
     "@types/express" "*"
@@ -249,7 +249,7 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
-"@types/webpack@*", "@types/webpack@4.41.2", "@types/webpack@^4.4.31":
+"@types/webpack@*", "@types/webpack@^4.4.31":
   version "4.41.2"
   resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.2.tgz#c6faf0111de27afdffe1158dac559e447c273516"
   integrity sha512-DNMQOfEvwzWRRyp6Wy9QVCgJ3gkelZsuBE2KUD318dg95s9DKGiT5CszmmV58hq8jk89I9NClre48AEy1MWAJA==
@@ -261,46 +261,58 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
-"@typescript-eslint/eslint-plugin@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.15.0.tgz#5442c30b687ffd576ff74cfea46a6d7bfb0ee893"
-  integrity sha512-XRJFznI5v4K1WvIrWmjFjBAdQWaUTz4xJEdqR7+wAFsv6Q9dP3mOlE6BMNT3pdlp9eF1+bC5m5LZTmLMqffCVw==
+"@types/webpack@4.41.6":
+  version "4.41.6"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.6.tgz#c76afbdef59159d12e3e1332dc264b75574722a2"
+  integrity sha512-iWRpV5Ej+8uKrgxp6jXz3v7ZTjgtuMXY+rsxQjFNU0hYCnHkpA7vtiNffgxjuxX4feFHBbz0IF76OzX2OqDYPw==
   dependencies:
-    "@typescript-eslint/experimental-utils" "2.15.0"
+    "@types/anymatch" "*"
+    "@types/node" "*"
+    "@types/tapable" "*"
+    "@types/uglify-js" "*"
+    "@types/webpack-sources" "*"
+    source-map "^0.6.0"
+
+"@typescript-eslint/eslint-plugin@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.20.0.tgz#a522d0e1e4898f7c9c6a8e1ed3579b60867693fa"
+  integrity sha512-cimIdVDV3MakiGJqMXw51Xci6oEDEoPkvh8ggJe2IIzcc0fYqAxOXN6Vbeanahz6dLZq64W+40iUEc9g32FLDQ==
+  dependencies:
+    "@typescript-eslint/experimental-utils" "2.20.0"
     eslint-utils "^1.4.3"
     functional-red-black-tree "^1.0.1"
     regexpp "^3.0.0"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.15.0.tgz#41e35313bfaef91650ddb5380846d1c78a780070"
-  integrity sha512-Qkxu5zndY5hqlcQkmA88gfLvqQulMpX/TN91XC7OuXsRf4XG5xLGie0sbpX97o/oeccjeZYRMipIsjKk/tjDHA==
+"@typescript-eslint/experimental-utils@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.20.0.tgz#3b6fa5a6b8885f126d5a4280e0d44f0f41e73e32"
+  integrity sha512-fEBy9xYrwG9hfBLFEwGW2lKwDRTmYzH3DwTmYbT+SMycmxAoPl0eGretnBFj/s+NfYBG63w/5c3lsvqqz5mYag==
   dependencies:
     "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.15.0"
+    "@typescript-eslint/typescript-estree" "2.20.0"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.15.0.tgz#379a71a51b0429bc3bc55c5f8aab831bf607e411"
-  integrity sha512-6iSgQsqAYTaHw59t0tdjzZJluRAjswdGltzKEdLtcJOxR2UVTPHYvZRqkAVGCkaMVb6Fpa60NnuozNCvsSpA9g==
+"@typescript-eslint/parser@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.20.0.tgz#608e5bb06ba98a415b64ace994c79ab20f9772a9"
+  integrity sha512-o8qsKaosLh2qhMZiHNtaHKTHyCHc3Triq6aMnwnWj7budm3xAY9owSZzV1uon5T9cWmJRJGzTFa90aex4m77Lw==
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "2.15.0"
-    "@typescript-eslint/typescript-estree" "2.15.0"
+    "@typescript-eslint/experimental-utils" "2.20.0"
+    "@typescript-eslint/typescript-estree" "2.20.0"
     eslint-visitor-keys "^1.1.0"
 
-"@typescript-eslint/typescript-estree@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.15.0.tgz#79ae52eed8701b164d91e968a65d85a9105e76d3"
-  integrity sha512-L6Pog+w3VZzXkAdyqA0VlwybF8WcwZX+mufso86CMxSdWmcizJ38lgBdpqTbc9bo92iyi0rOvmATKiwl+amjxg==
+"@typescript-eslint/typescript-estree@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.20.0.tgz#90a0f5598826b35b966ca83483b1a621b1a4d0c9"
+  integrity sha512-WlFk8QtI8pPaE7JGQGxU7nGcnk1ccKAJkhbVookv94ZcAef3m6oCE/jEDL6dGte3JcD7reKrA0o55XhBRiVT3A==
   dependencies:
     debug "^4.1.1"
     eslint-visitor-keys "^1.1.0"
     glob "^7.1.6"
     is-glob "^4.0.1"
-    lodash.unescape "4.0.1"
+    lodash "^4.17.15"
     semver "^6.3.0"
     tsutils "^3.17.1"
 
@@ -3337,11 +3349,6 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash.unescape@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
-  integrity sha1-vyJJiGzlFM2hEvrpIYzcBlIR/Jw=
-
 lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
@@ -5297,16 +5304,16 @@ ts-loader@6.2.1:
     micromatch "^4.0.0"
     semver "^6.0.0"
 
-ts-node@8.5.4:
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.5.4.tgz#a152add11fa19c221d0b48962c210cf467262ab2"
-  integrity sha512-izbVCRV68EasEPQ8MSIGBNK9dc/4sYJJKYA+IarMQct1RtEot6Xp0bXuClsbUSnKpg50ho+aOAx8en5c+y4OFw==
+ts-node@8.6.2:
+  version "8.6.2"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.6.2.tgz#7419a01391a818fbafa6f826a33c1a13e9464e35"
+  integrity sha512-4mZEbofxGqLL2RImpe3zMJukvEvcO1XP8bj8ozBPySdCUXEcU5cIRwR0aM3R+VoZq7iXc8N86NC0FspGRqP4gg==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
     make-error "^1.1.1"
     source-map-support "^0.5.6"
-    yn "^3.0.0"
+    yn "3.1.1"
 
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
@@ -5360,10 +5367,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.7.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
-  integrity sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
+typescript@3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
+  integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
 
 uglify-js@3.4.x:
   version "3.4.10"
@@ -5638,10 +5645,10 @@ webpack-dev-middleware@^3.7.2:
     range-parser "^1.2.1"
     webpack-log "^2.0.0"
 
-webpack-dev-server@3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-3.10.1.tgz#1ff3e5cccf8e0897aa3f5909c654e623f69b1c0e"
-  integrity sha512-AGG4+XrrXn4rbZUueyNrQgO4KGnol+0wm3MPdqGLmmA+NofZl3blZQKxZ9BND6RDNuvAK9OMYClhjOSnxpWRoA==
+webpack-dev-server@3.10.3:
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-3.10.3.tgz#f35945036813e57ef582c2420ef7b470e14d3af0"
+  integrity sha512-e4nWev8YzEVNdOMcNzNeCN947sWJNd43E5XvsJzbAL08kGc2frm1tQ32hTJslRS+H65LCb/AaUCYU7fjHCpDeQ==
   dependencies:
     ansi-html "0.0.7"
     bonjour "^3.5.0"
@@ -5693,10 +5700,10 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.41.5:
-  version "4.41.5"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.5.tgz#3210f1886bce5310e62bb97204d18c263341b77c"
-  integrity sha512-wp0Co4vpyumnp3KlkmpM5LWuzvZYayDwM2n17EHFr4qxBBbRokC7DJawPJC7TfSFZ9HZ6GsdH40EBj4UV0nmpw==
+webpack@4.41.6:
+  version "4.41.6"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.6.tgz#12f2f804bf6542ef166755050d4afbc8f66ba7e1"
+  integrity sha512-yxXfV0Zv9WMGRD+QexkZzmGIh54bsvEs+9aRWxnN8erLWEOehAKUTeNBoUbA6HPEZPlRo7KDi2ZcNveoZgK9MA==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
@@ -5864,7 +5871,7 @@ yargs@^7.1.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-yn@^3.0.0:
+yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==

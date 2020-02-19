@@ -10,9 +10,7 @@ import Component from "vue-class-component";
  * ルートコンポーネント.
  */
 @Component
-export class Root extends Vue {
+export default class Root extends Vue {
     message = "Hello, MORISOBA";
 }
-
-export default Root;
 </script>

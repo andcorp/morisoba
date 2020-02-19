@@ -2,6 +2,10 @@
     "compilerOptions": {
         "strict": true,
         "target": "es5",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "baseUrl": "node_modules",
+        "paths": {
+            "*": ["@types/*", "*"]
+        }
     }
 }

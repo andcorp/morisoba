@@ -3,9 +3,11 @@
         "strict": true,
         "target": "es5",
         "esModuleInterop": true,
-        "baseUrl": "node_modules",
+        "experimentalDecorators": true,
+        "baseUrl": ".",
         "paths": {
-            "*": ["@types/*", "*"]
+            "@/*": ["src/ts/*"],
+            "*": ["node_modules/@types/*", "*"]
         }
     }
 }

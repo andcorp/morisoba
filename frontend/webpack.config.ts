@@ -7,6 +7,7 @@ import { Configuration, Module, Resolve, RuleSetRule } from "webpack";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import VueLoader from "vue-loader";
+import path from "path";
 
 /**
  * ビルドルール定義.
@@ -15,7 +16,13 @@ const rules: RuleSetRule[] = [
     // TypeScriptルール
     {
         test: /\.ts$/,
-        use: "ts-loader"
+        use: {
+            loader: "ts-loader",
+            options: {
+                // Vue SFCに拡張子tsを追加してTypeScript扱いする。
+                appendTsSuffixTo: [/\.vue$/]
+            }
+        }
     },
 
     // Vue SFCルール
@@ -41,7 +48,16 @@ const module: Module = { rules };
  */
 const resolve: Resolve = {
     // 省略可能にする拡張子の設定
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js"],
+
+    // パスの別名設定
+    alias: {
+        // "@/"を"src/ts"に対応させる。
+        "@": path.resolve(__dirname, "src/ts"),
+
+        // vue-template-loader向け別名
+        vue$: "vue/dist/vue.esm.js"
+    }
 };
 
 /**

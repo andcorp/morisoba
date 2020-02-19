@@ -19,6 +19,12 @@ const rules: RuleSetRule[] = [
         use: {
             loader: "ts-loader",
             options: {
+                // Webpack向けモジュール参照設定。Tree shakingが有効になるよう設定する。
+                compilerOptions: {
+                    module: "esnext",
+                    moduleResolution: "node"
+                },
+
                 // Vue SFCに拡張子tsを追加してTypeScript扱いする。
                 appendTsSuffixTo: [/\.vue$/]
             }
@@ -53,10 +59,7 @@ const resolve: Resolve = {
     // パスの別名設定
     alias: {
         // "@/"を"src/ts"に対応させる。
-        "@": path.resolve(__dirname, "src/ts"),
-
-        // vue-template-loader向け別名
-        vue$: "vue/dist/vue.esm.js"
+        "@": path.resolve(__dirname, "src/ts")
     }
 };
 

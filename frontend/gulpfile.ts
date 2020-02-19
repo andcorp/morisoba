@@ -13,7 +13,7 @@ type DoneFunction = (error?: {}) => void;
 // ログ等表示設定
 const stats = {
     // ログをカラーコード付きで表示する。
-    colors: true,
+    colors: true
 };
 
 /**
@@ -38,7 +38,7 @@ export async function serve(): Promise<void> {
         port: 3000,
 
         // ログ等の表示設定
-        stats,
+        stats
     };
 
     // Webpack設定を読み込む。

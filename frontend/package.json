@@ -13,6 +13,9 @@
     },
     "license": "MIT",
     "private": true,
+    "dependencies": {
+        "vue": "2.6.11"
+    },
     "devDependencies": {
         "typescript": "3.7.5",
         "ts-node": "8.6.2",

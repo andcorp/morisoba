@@ -70,6 +70,13 @@ const config: Configuration = {
     // アプリケーションエントリーポイント定義
     entry: "./src/ts/index.ts",
 
+    // チャンク分割設定
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
+
     // ソースコード解決
     resolve,
 

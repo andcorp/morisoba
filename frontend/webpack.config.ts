@@ -38,6 +38,12 @@ const rules: RuleSetRule[] = [
         loader: "vue-loader"
     },
 
+    // SASSルール
+    {
+        test: /\.s[ac]ss$/i,
+        use: ["vue-style-loader", "css-loader", "sass-loader"]
+    },
+
     // CSSルール
     {
         test: /\.css$/,

@@ -6,6 +6,7 @@ import { Configuration, Module, Resolve, RuleSetRule } from "webpack";
 
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import TerserWebpackPlugin from "terser-webpack-plugin";
 import VueLoader from "vue-loader";
 import path from "path";
 
@@ -72,6 +73,8 @@ const config: Configuration = {
 
     // チャンク分割設定
     optimization: {
+        minimize: true,
+        minimizer: [new TerserWebpackPlugin()],
         splitChunks: {
             chunks: "all"
         }

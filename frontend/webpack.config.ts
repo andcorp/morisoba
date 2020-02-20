@@ -6,6 +6,7 @@ import { Configuration, Module, Resolve, RuleSetRule } from "webpack";
 
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import TerserWebpackPlugin from "terser-webpack-plugin";
 import VueLoader from "vue-loader";
 import path from "path";
 
@@ -35,6 +36,12 @@ const rules: RuleSetRule[] = [
     {
         test: /\.vue$/,
         loader: "vue-loader"
+    },
+
+    // SASSルール
+    {
+        test: /\.s[ac]ss$/i,
+        use: ["vue-style-loader", "css-loader", "sass-loader"]
     },
 
     // CSSルール
@@ -69,6 +76,15 @@ const resolve: Resolve = {
 const config: Configuration = {
     // アプリケーションエントリーポイント定義
     entry: "./src/ts/index.ts",
+
+    // チャンク分割設定
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserWebpackPlugin()],
+        splitChunks: {
+            chunks: "all"
+        }
+    },
 
     // ソースコード解決
     resolve,

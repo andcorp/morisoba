@@ -38,6 +38,7 @@
         "vue-template-compiler": "2.6.11",
         "terser-webpack-plugin": "2.3.5",
         "@types/terser-webpack-plugin": "2.2.0",
-        "sass-loader": "8.0.2"
+        "sass-loader": "8.0.2",
+        "node-sass": "4.13.1"
     }
 }

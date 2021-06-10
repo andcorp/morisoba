@@ -8,7 +8,7 @@ import WebpackDevServer from "webpack-dev-server";
 /**
  * 終了関数.
  */
-type DoneFunction = (error?: {}) => void;
+type DoneFunction = (error?: unknown) => void;
 
 // ログ等表示設定
 const stats = {
